@@ -1,0 +1,47 @@
+footer{
+   background-color:#E1B87F66;
+   padding-top: 106px;
+   padding-bottom: 28px;
+   .logo{
+      width: 200px;
+   }
+   .footer-con{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .footer-menu{
+         display: flex;
+         flex-direction: row;
+         gap:70px;
+      }
+      .menu-item a{
+            font-family:'GT Pressura';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #007078;
+            text-transform: uppercase;
+      }
+      .submenu-item:first-child{
+         font-family: 'GT Pressura';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #007078;
+            text-transform: uppercase;
+      }
+             .submenu-item a{
+               font-family: 'GT America';
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                  color: black;
+             }
+   }
+}

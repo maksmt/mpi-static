@@ -1,0 +1,99 @@
+header{
+   padding-top: 36px;
+   padding-bottom: 37px;
+   display: flex !important;
+   flex-direction: row;
+   justify-content: space-between;
+   .logo{
+      width: 158px;
+   }
+   .menu-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+      .menu-item a{
+   font-family: 'GT America';
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #FF4438;
+   transition: 0.3s;
+   text-transform: uppercase;
+      }
+      .menu-item a:hover{
+         transition: 0.3s;
+         color: black;
+      }
+      .dropdown{
+         position: relative;
+         .submenu{
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s;
+            position: absolute;
+            top:0px;
+            .submenu-item{
+               white-space: nowrap;
+            }
+         }
+                  .subsubmenu {
+                     opacity: 0;
+                     pointer-events: none;
+                     transition: 0.5s;
+                     position: absolute;
+                     left:0%;
+                  }
+      }
+      .dropdown:hover{
+         .submenu{
+            pointer-events: all;
+            display: block;
+            opacity: 1;
+            transition: 0.5s;
+            top:20px;
+         }
+      }
+      .dropdown::after{
+         content: url("../img/arrowd.svg");
+         margin-left: 10px;
+      }
+            .dropdown2:hover {
+               .subsubmenu {
+                  pointer-events: all;
+                  display: block;
+                  opacity: 1;
+                  transition: 0.5s;
+                  top:0px;
+                  left: 100%;
+               }
+            }
+      
+            .dropdown2::after {
+               content: url("../img/arrowd.svg");
+               margin-left: 10px;
+            }
+   }
+
+   .social{
+      display: flex;
+      flex-direction: row;
+      gap:11px;
+      align-items: center;
+      .social-item img{
+         width: 21.75px;
+      }
+      .social-item{
+         transition: 0.1s;
+      }
+      .social-item:hover{
+         transition: 0.1s;
+         transform: scale(1.1);
+      }
+   }
+   .social-item:first-child img{
+      width: 23px;
+   }
+}
