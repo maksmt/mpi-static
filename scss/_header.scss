@@ -96,4 +96,19 @@ header{
    .social-item:first-child img{
       width: 23px;
    }
+      @media (max-width:900px) {
+         .menu-header {
+            gap: 30px;
+         }
+      }
+   
+      @media (max-width:768px) {
+         .menu-header {
+            display: none;
+         }
+   
+         .social {
+            display: none;
+         }
+      }
 }

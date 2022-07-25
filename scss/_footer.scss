@@ -4,11 +4,13 @@ footer{
    padding-bottom: 28px;
    .logo{
       width: 200px;
+      height: 94px;
    }
    .footer-con{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding-bottom: 22px;
       .footer-menu{
          display: flex;
          flex-direction: row;
@@ -23,8 +25,10 @@ footer{
             text-align: left;
             color: #007078;
             text-transform: uppercase;
+            transition: 0.4s;
       }
-      .submenu-item:first-child{
+
+      .submenu-item:first-child a{
          font-family: 'GT Pressura';
             font-size: 16px;
             font-weight: 700;
@@ -33,15 +37,155 @@ footer{
             text-align: left;
             color: #007078;
             text-transform: uppercase;
+               transition: 0.4s;
+      }
+            .submenu-item:first-child a:hover{
+               transition: 0.4s;
+               color: #000;
+            }
+      .menu-item a:hover{
+         transition: 0.4s;
+         color: #000;
+      }
+      .submenu{
+         display: flex;
+         flex-direction: column;
+         gap:20px;
+      }
+      .submenu-item{
+               max-width: 140px;
+               transition: 0.4s;
+      }
+      .submenu-item a:hover{
+         transition: 0.4s;
+         color:#007078;
       }
              .submenu-item a{
                font-family: 'GT America';
-                  font-size: 14px;
-                  font-weight: 400;
-                  line-height: 24px;
-                  letter-spacing: 0em;
-                  text-align: left;
-                  color: black;
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 24px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: black;
+               white-space: wrap;
              }
+             .social{
+               display: none;
+             }
+      .contactus{
+         background-color:  #00609C;
+         padding: 20px 50px;
+         height:60px;
+         border-radius: 6px;
+         transition: 0.4s;
+         display: block;
+         white-space: nowrap;
+      }
+      @media (max-width:964px) {
+         .contactus{
+         height: 54px;
+         padding: 18px 41px;
+         }
+         .footer-menu{
+            gap: 40px;
+         }  
+      }
+      @media (max-width:830px) {
+         .footer-menu{
+            gap: 20px;
+         }
+      }
+      .button1{
+         display: none;
+      }
+      .contactus:hover{
+         transition: 0.4s;
+         transform: scale(1.05);
+      }
+      .contactus a{
+         font-family: 'GT America';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+            text-transform: uppercase;
+      }
+
    }
+}
+.container{
+   .footer-text{
+      font-family: 'GT America';
+         font-size: 12px;
+         font-weight: 400;
+         line-height: 14px;
+         letter-spacing: 0em;
+         text-align: center;
+   }
+}
+@media (max-width:768px) {
+   footer{
+      padding-top: 39.31px;
+      .container{
+         padding: 0 20px;
+      }
+   .footer-con{
+      display: flex;
+      text-align: center;
+      flex-direction: column !important;
+      justify-content: center !important;
+      .logo{
+      margin: 0 auto;
+      width: 151px;
+      height: 70.97px;
+      }
+      .submenu-item{
+         display: none;
+      }
+      .submenu-item:first-child{
+               display: block;
+      }
+      .social{
+         display: flex;
+         margin: 0 auto;
+         margin-top: 32px;
+         gap: 10px;
+      }
+      .footer-menu{
+         margin: 0 auto;
+      }
+      .button2{
+         display: none;
+      }
+      .button1{
+         display: block;
+      }
+      .contactus{
+         text-align: center;
+         margin: 0 auto;
+         margin-top: 32px;
+      }
+      .contactus a{
+         line-height: 24px;
+      }
+      .footer-menu{
+         margin-top: 30px;
+      }
+   }
+   .footer-text{
+      font-family: 'GT America';
+         font-size: 11px;
+         font-weight: 400;
+         line-height: 15px;
+         letter-spacing: 0em;
+         text-align: center;
+   }
+   .footer-text:first-child{
+         margin-bottom: 15px;
+         margin-top: 30px;
+   }
+}
 }
