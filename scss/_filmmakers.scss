@@ -1,0 +1,228 @@
+.toppart{
+   background-color: #F2F2F2;
+   padding: 134px 0px;
+   position: relative;
+   .title{
+         font-family: 'GT Pressura';
+         text-transform: uppercase;
+         font-size: 120px;
+         font-weight: 700;
+         line-height: 132px;
+         letter-spacing: 0em;
+         text-align: left;
+         color:#FF4438;
+   }
+     .yakas-huyovina{
+      width: 60px;
+      border: 60px solid transparent;
+      border-right: 60px solid white;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      border-bottom: 60px solid white;
+     }
+}
+.second-part{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 134px;
+   .left{
+      min-width: 30%;
+      p{
+            font-family: 'GT America';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.4em;
+            text-align: left;
+            color: #7F2629;
+            text-transform: uppercase;
+      }
+   }
+   .right{
+      .second-text{
+   font-family: 'GT America';
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #222222;
+   padding-top: 24px;
+      }
+.first-text{
+   font-family: 'GT America';
+   font-size: 24px;
+   font-weight: 300;
+   line-height: 36px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #00609C;
+      }
+   }
+}
+.filmmakers-content{
+   .content-part{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 95px;
+      .left{
+         width: 100%;
+         height: 370px;
+         position: relative;
+         img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            object-fit: cover;
+         }
+         .yakas-huyovina {
+                     width: 30px;
+                     border: 30px solid transparent;
+                     border-right: 30px solid white;
+                     position: absolute;
+                     bottom: 0px;
+                     right: 0px;
+                     border-bottom: 30px solid white;
+                  }
+      }
+      .right{
+         display: flex;
+         flex-direction: column;
+         padding-left: 92px;
+         width: 100%;
+         .title{
+               font-family: 'GT Pressura';
+               font-size: 40px;
+               font-weight: 700;
+               line-height: 50px;
+               letter-spacing: 0em;
+               text-align: left;
+               text-transform: uppercase;
+               color: #FF4438;
+         }
+         .about{
+            padding-top: 30px;
+            max-width: 439px;
+               font-family: 'GT America';
+               font-size: 18px;
+               font-weight: 400;
+               line-height: 26px;
+               letter-spacing: 0em;
+               text-align: left;
+               color: #222222;
+         }
+         .learnmore a{
+            color: #fff;
+            font-family: 'GT America';
+               font-size: 16px;
+               font-weight: 700;
+               line-height: 24px;
+               letter-spacing: 0em;
+               text-align: left;
+               white-space: nowrap;
+         }
+         .learnmore{
+            margin-top: 30px;
+            max-width: 55%;
+            min-width: 300px;
+            border-radius: 6px;
+            background-color: #00609C;
+            padding: 20px 50px;
+         }
+      }
+   }
+            .content-part:last-child{
+               flex-direction: row-reverse;
+               .right{
+                  padding-left: 0px;
+               }
+            }
+}
+@media (max-width:768px) {
+   .toppart{
+      padding-top: 238px;
+      padding-bottom: 106px;
+      .title{
+         font-size: 32px;
+      }
+      .yakas-huyovina{
+         width: 20px;
+            border: 20px solid transparent;
+            border-right: 20px solid white;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border-bottom: 20px solid white;
+      }
+   }
+   .second-part{
+      flex-direction: column;
+      padding-top: 60px;
+      .left{
+         min-width: 100%;
+      }
+      .right{
+         .first-text{
+            margin-top: 27px;
+               font-size: 18px;
+               font-weight: 400;
+               line-height: 24px;
+               letter-spacing: 0em;
+               text-align: left;
+         }
+         .second-text{
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 20px;
+               letter-spacing: 0em;
+               text-align: left;
+         }
+      }
+   }
+      .filmmakers-content {
+         .content-part {
+            flex-direction: column;
+            .right{
+               padding-top: 8.85px;
+               padding-left: 0px;
+               .title{
+                  font-size: 22px;
+                  line-height: 26px;
+               }
+.about {
+      max-width: 100%;
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 20px;
+   }
+      .learnmore {
+         padding: 10px 24px;
+         min-width: 100px;
+      }
+   
+      .learnmore a {
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 20px;
+         letter-spacing: 0em;
+         text-align: left;
+      }
+            }
+            
+         }
+      
+            .content-part:last-child {
+               flex-direction: column;
+            }
+            
+         }
+                  
+}
